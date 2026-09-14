@@ -1,4 +1,4 @@
-package ArrayList;
+package arraylist;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class BaiTapArrayList {
        numbers.add(30);
        numbers.add(40);
        numbers.add(50);
-       System.out.println("1. Mảng gốc:");
+       System.out.println("1. Danh sách gốc:");
        System.out.println(numbers + "\n");
 
        // 2. In phần tử tại index 2
@@ -51,13 +51,14 @@ public class BaiTapArrayList {
        // 7. Tìm index của phần tử 50
        System.out.println("7. Tìm index của phần tử 50");
        System.out.println(numbers);
-       if (numbers.indexOf(50) == -1)
+       int index = numbers.indexOf(50);
+       if (index == -1)
        {
            System.out.println("Danh sách không có phần tử 50");
        }
        else
        {
-           System.out.println("Index của phần tử 50: " + numbers.indexOf(50));
+           System.out.println("Index của phần tử 50: " + index);
        }
    }
 }
