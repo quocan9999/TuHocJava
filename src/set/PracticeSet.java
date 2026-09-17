@@ -20,5 +20,21 @@ public class PracticeSet {
         // Câu 3. Loại bỏ phần tử trùng và sắp xếp tăng dần
         Set<Integer> numTreeSet = new TreeSet<>(numbers);
         System.out.println(numTreeSet);
+
+        // Câu 4. Kiểm tra set có chứa số 5 không
+        boolean checkNumHashSet = numHashSet.contains(5);
+        System.out.println(checkNumHashSet);
+        boolean checkNumLinkedHashSet = numLinkedHashSet.contains(5);
+        System.out.println(checkNumLinkedHashSet);
+        boolean checkNumTreeSet = numTreeSet.contains(5);
+        System.out.println(checkNumTreeSet);
+
+        // Câu 5. Xoá số 3 bằng remove
+        numHashSet.remove(3);
+        numLinkedHashSet.remove(3);
+        numTreeSet.remove(3);
+        System.out.println(numHashSet);
+        System.out.println(numLinkedHashSet);
+        System.out.println(numTreeSet);
     }
 }
